@@ -1,5 +1,5 @@
 let data = undefined;
-const detectDateType = (something) => {
+const detectDataType = (something) => {
   if(typeof(something) == 'string'){
     return 'string';
   }else if(typeof(something) == 'number'){
@@ -17,4 +17,4 @@ const detectDateType = (something) => {
     return 'undefined';
   }
 }
-console.log(detectDateType(data));
+console.log(detectDataType(data));

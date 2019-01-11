@@ -9,8 +9,10 @@ const allPossibilities = (str) =>{
   for(let i = 0; i < numOfStr; i++){
     temp = strArr[i];
     console.log(temp);
-    for(let j = 0; j < numOfStr; j++){
-      if(temp != strArr[j]){
+    for(let j = 0; j < numOfStr -1; j++){
+        temp += strArr[j];
+        console.log(temp);
+      for(let j = 0; j < numOfStr -2; j++){
         temp += strArr[j];
         console.log(temp);
       }
