@@ -45,5 +45,6 @@ const checkPalindrome = class {
     }
   }
 }
+
 const testClass = new possiblePatterns("madam");
 testClass.showPatterns();
