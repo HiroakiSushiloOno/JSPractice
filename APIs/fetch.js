@@ -1,10 +1,10 @@
-const fetch = (url) => {
-  fetch(url)
-  .then(function(response) {
-    return response.json();
+const fetch = require('node-fetch');
+const testFetch = () => {
+  fetch('https://api.github.com/users/KrunalLathiya')
+  .then(response => response.json())
+  .then(data => {
+    console.log(data) // Prints result from `response.json()` in getRequest
   })
-  .then(function(myJson) {
-    console.log(JSON.stringify(myJson));
-  });
-  }
-fetch("test.txt");
+  .catch(error => console.error(error))
+}
+testFetch();
